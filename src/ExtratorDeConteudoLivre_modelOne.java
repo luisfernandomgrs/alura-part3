@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
-public class ExtratorDeConteudoLivre_modelOne {
+public class ExtratorDeConteudoLivre_modelOne implements ExtratorDeConteudo {
   public List<Conteudo> extraiConteudos(String json) {
     // extrair dados de interesse (titulo, poster, classificação)
     var parser = new JsonParser();
