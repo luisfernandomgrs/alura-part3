@@ -1,26 +1,14 @@
-public class Conteudo {
-  private final String id;
-  private final String titulo;
-  private final String rating;
-  private final String urlImagem;
+public record Conteudo(
+    String id,
+    String titulo,
+    String rating,
+    String urlImagem) {
 
   public Conteudo(String id, String titulo, String rating, String urlImagem) {
     this.id = id;
     this.titulo = titulo;
     this.rating = rating;
     this.urlImagem = urlImagem;
-  }
-
-  public String getId() {
-    return id;
-  }
-
-  public String getTitulo() {
-    return titulo;
-  }
-
-  public String getRating() {
-    return rating;
   }
 
   public String getComicRating() {
@@ -42,9 +30,5 @@ public class Conteudo {
     }
 
     return comicRating;
-  }
-
-  public String getUrlImagem() {
-    return urlImagem;
   }
 }
